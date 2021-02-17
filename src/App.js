@@ -1,8 +1,14 @@
 import React from 'react'
+
 import './App.css'
+import Homepage from './homepage.component'
 
 function App() {
-  return <div>JC Clothing</div>
+  return (
+    <div>
+      <Homepage />
+    </div>
+  )
 }
 
 export default App
