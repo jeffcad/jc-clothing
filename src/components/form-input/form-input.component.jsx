@@ -12,7 +12,7 @@ function FormInput({ handleChange, label, ...otherProps }) {
             className={`${otherProps.value.length ?
               'shrink' : ''
               } form-input-label`}
-            for={otherProps.id}
+            htmlFor={otherProps.id}
           >
             {label}
           </label>
