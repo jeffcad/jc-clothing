@@ -12,7 +12,7 @@ const SHOP_DATA = [
       },
       {
         id: 2,
-        name: 'Blue Beanie',
+        name: 'Blue Toque',
         imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
         price: 18
       },
@@ -30,7 +30,7 @@ const SHOP_DATA = [
       },
       {
         id: 5,
-        name: 'Green Beanie',
+        name: 'Green Toque',
         imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
         price: 18
       },
@@ -42,7 +42,7 @@ const SHOP_DATA = [
       },
       {
         id: 7,
-        name: 'Red Beanie',
+        name: 'Red Toque',
         imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
         price: 18
       },
