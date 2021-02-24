@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react'
 import { Route } from 'react-router-dom'
-import { connect } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container'
 import CollectionPageContainer from '../collection/collection.container'
 import { fetchCollectionsStartAsync } from '../../redux/shop/shop.actions'
 
-function ShopPage({ match, fetchCollectionsStartAsync }) {
+function ShopPage({ match }) {
+
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    fetchCollectionsStartAsync()
+    dispatch(fetchCollectionsStartAsync())
   }, [fetchCollectionsStartAsync])
 
   return (
@@ -20,10 +22,4 @@ function ShopPage({ match, fetchCollectionsStartAsync }) {
   )
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync())
-  }
-}
-
-export default connect(null, mapDispatchToProps)(ShopPage)
+export default ShopPage
