@@ -55,8 +55,8 @@ function SignIn() {
           required
         />
         <div className='buttons'>
-          <CustomButton type='submit'>Sign In</CustomButton>
-          <CustomButton type='button' onClick={signInWithGoogle} isGoogleSignIn>
+          <CustomButton className='custom-button' type='submit'>Sign In</CustomButton>
+          <CustomButton className='custom-button' type='button' onClick={signInWithGoogle} isGoogleSignIn>
             Sign In With Google
           </CustomButton>
         </div>

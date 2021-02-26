@@ -41,3 +41,20 @@
     color: red;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .checkout-page {
+    width: unset;
+    padding: 0 10px;
+
+    .checkout-header {
+      .header-block {
+        width: unset;
+
+        &:last-child {
+          width: unset;
+        }
+      }
+    }
+  }
+}

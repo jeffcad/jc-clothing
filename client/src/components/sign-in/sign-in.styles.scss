@@ -12,3 +12,14 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .sign-in {
+    width: unset;
+    margin-bottom: 50px;
+
+    .custom-button {
+      min-width: unset;
+    }
+  }
+}

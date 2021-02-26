@@ -81,7 +81,7 @@ function SignUp() {
           label='Confirm Password'
           required
         />
-        <CustomButton type='submit'>SIGN UP</CustomButton>
+        <CustomButton className='custom-button' type='submit'>SIGN UP</CustomButton>
       </form>
     </div>
   )
