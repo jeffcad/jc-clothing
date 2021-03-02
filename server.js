@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const compression = require('compression')
 
 if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
@@ -8,6 +9,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 const app = express()
 const port = process.env.PORT || 5000
 
+app.use(compression())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
